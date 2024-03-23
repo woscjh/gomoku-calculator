@@ -17,7 +17,7 @@ function getDefaultThreadNum() {
 const state = {
   language: null,
   boardStyle: {
-    boardColor: '#F4D03F',
+    boardColor: '#BDBEBC',
     lineColor: '#000000',
     lineWidth: 0.03,
     coordColor: '#000000',
@@ -55,7 +55,7 @@ const state = {
     pvEvalAlpha: 0.9,
   },
   boardSize: 15,
-  thinkTimeOption: 1,
+  thinkTimeOption: 0,
   turnTime: 5000,
   matchTime: 9999000,
   maxDepth: 64,

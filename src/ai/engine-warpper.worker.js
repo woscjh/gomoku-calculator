@@ -1,3 +1,4 @@
+// 用于开启AI的多线程思考
 var EngineInstance = null
 
 self.onmessage = function (e) {

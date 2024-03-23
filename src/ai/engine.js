@@ -1,3 +1,4 @@
+// 调用 rapfi 引擎
 import Worker from './engine-warpper.worker.js'
 import { checkSharedArrayBufferSupport } from './util'
 import { script } from '@/../node_modules/dynamic-import/dist/import.js'

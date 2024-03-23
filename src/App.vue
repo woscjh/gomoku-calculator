@@ -32,14 +32,14 @@
           @on-click-more="showMessages"
         >
           {{ $t('appName') }}
-          <a
+          <!-- <a
             v-if="route.path !== '/settings' && route.path !== '/about'"
             slot="right"
             class="needsclick"
             @click="showMessages"
           >
             <i class="fa fa-list fa-lg" aria-hidden="true" style="color: #d6eaf8"></i>
-          </a>
+          </a> -->
         </x-header>
 
         <!-- main content -->
@@ -63,7 +63,7 @@
             <x-icon slot="icon-active" type="ios-cog-outline" class="tabber-icon-active"></x-icon>
             <span slot="label">{{ $t('tabbar.settings') }}</span>
           </tabbar-item>
-          <tabbar-item link="/about" :selected="route.path === '/about'">
+          <!-- <tabbar-item link="/about" :selected="route.path === '/about'">
             <x-icon slot="icon" type="ios-information-outline"></x-icon>
             <x-icon
               slot="icon-active"
@@ -71,7 +71,7 @@
               class="tabber-icon-active"
             ></x-icon>
             <span slot="label">{{ $t('tabbar.about') }}</span>
-          </tabbar-item>
+          </tabbar-item> -->
         </tabbar>
       </view-box>
     </drawer>

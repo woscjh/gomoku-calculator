@@ -1,14 +1,14 @@
 <template>
   <div class="settings">
-    <group>
+    <!-- <group>
       <popup-radio
         :title="$t('setting.language')"
         v-model="languageValue"
         :options="languageOptions"
       />
-    </group>
+    </group> -->
 
-    <group>
+    <!-- <group>
       <group-title slot="title">{{ $t('setting.thinking.timeTitle') }}</group-title>
       <radio :options="thinkTimeOptions" v-model="thinkTimeSelected" />
       <div class="time-settings" v-if="thinkTimeSelected == 0">
@@ -51,7 +51,7 @@
           fillable
         />
       </div>
-    </group>
+    </group> -->
 
     <group>
       <group-title slot="title">{{ $t('setting.board.title') }}</group-title>
@@ -73,7 +73,7 @@
       <x-switch :title="$t('setting.board.aiThinkWhite')" v-model="aiThinkWhiteValue" />
     </group>
 
-    <group>
+    <!-- <group>
       <group-title slot="title">{{ $t('setting.thinking.thinkTitle') }}</group-title>
       <x-number
         :title="$t('setting.thinking.nbest')"
@@ -124,9 +124,9 @@
         v-model="hashSizeValue"
         :options="hashSizeOptions"
       />
-    </group>
+    </group> -->
 
-    <group>
+    <!-- <group>
       <group-title slot="title">{{ $t('setting.board.showTitle') }}</group-title>
       <popup-radio
         :title="$t('setting.board.clickCheck.title')"
@@ -145,9 +145,9 @@
         v-model="showPvEvalValue"
         :options="showPvEvalOptions"
       />
-    </group>
+    </group> -->
 
-    <group>
+    <!-- <group>
       <group-title slot="title">{{ $t('setting.board.colorTitle') }}</group-title>
       <cell :title="$t('setting.board.boardColor')">
         <input type="color" v-model="boardColor" />
@@ -170,11 +170,11 @@
       <cell :title="$t('setting.board.lostMoveColor')">
         <input type="color" v-model="lostMoveColor" />
       </cell>
-    </group>
+    </group> -->
 
-    <box gap="40px 20px 20px 20px">
+    <!-- <box gap="40px 20px 20px 20px">
       <x-button type="warn" @click.native="reset">{{ $t('setting.reset') }}</x-button>
-    </box>
+    </box> -->
   </div>
 </template>
 

@@ -542,6 +542,7 @@ export default {
       gif.on('finished', callback)
       gif.render()
     },
+    // 鼠标点击落子
     onMouseDown(event) {
       if (this.clickCheck == 2) {
         if (event.type === 'touchstart') {
@@ -555,6 +556,7 @@ export default {
         }
       }
 
+      // 获取鼠标坐标对应的棋盘位置
       let x = event.pageX - this.$refs.canvasBoard.getBoundingClientRect().left
       let y = event.pageY - this.$refs.canvasBoard.getBoundingClientRect().top
       let cellSize = this.boardWidth / this.boardSize
@@ -566,6 +568,7 @@ export default {
         return
       } else if (this.winline.length > 0) return
 
+      // 直接落子
       if (this.clickCheck == 0 || this.isAiTurn)
         this.$emit('clicked', { x, y, button: event.button })
       else if (this.clickCheck == 1) {

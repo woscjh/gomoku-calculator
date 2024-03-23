@@ -199,14 +199,14 @@
 
     <div class="info-box" :style="showAnalysis ? {} : { display: 'none' }">
       <div>
-        <x-progress
+        <!-- <x-progress
           v-if="thinking && aiTimeUsed > 0 && turnTime != 0"
           :percent="Math.min((100 * aiTimeUsed) / Math.min(turnTime, matchTime), 100)"
           :show-cancel="false"
-        ></x-progress>
+        ></x-progress> -->
 
         <!-- 单点分析的信息输出 -->
-        <x-table
+        <!-- <x-table
           v-if="nbest == 1"
           :cell-bordered="true"
           style="background-color: #fff; line-height: 210%"
@@ -261,10 +261,10 @@
               </td>
             </tr>
           </tbody>
-        </x-table>
+        </x-table> -->
 
         <!-- 多点分析的信息输出 -->
-        <div v-else>
+        <!-- <div v-else>
           <x-table :cell-bordered="true" style="background-color: #fff; line-height: 210%">
             <thead>
               <tr style="background-color: #f7f7f7">
@@ -316,10 +316,10 @@
               </tr>
             </tbody>
           </x-table>
-        </div>
+        </div> -->
       </div>
 
-      <group>
+      <!-- <group>
         <x-textarea
           ref="curposArea"
           style="padding: 5px"
@@ -334,9 +334,9 @@
           "
           autosize
         ></x-textarea>
-      </group>
+      </group> -->
 
-      <group :title="$t('game.evalChart')">
+      <!-- <group :title="$t('game.evalChart')">
         <div :style="{ width: chartWidth + 'px', height: chartWidth * 0.6 + 'px' }">
           <v-chart ref="chart" :data="evalData" :width="chartWidth" :height="chartWidth * 0.6">
             <v-scale ref="chartx" x :tick-interval="2" />
@@ -351,7 +351,7 @@
             <v-area shape="smooth" series-field="piece" />
           </v-chart>
         </div>
-      </group>
+      </group> -->
     </div>
 
     <div v-transfer-dom>

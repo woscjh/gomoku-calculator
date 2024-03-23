@@ -1,3 +1,4 @@
+// 对 AI 引擎的二次封, 让前端代码能更方便的调用
 import * as engine from '@/ai/engine'
 import { RENJU, CONFIGS } from './settings'
 
